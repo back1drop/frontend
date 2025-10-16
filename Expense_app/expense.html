@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="expense.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>💰Expense Tracker</h1>
+        <p>
+          Track your spending with style and stay in control of your finances
+        </p>
+      </header>
+      <div class="bubbles">
+        <div class="total_expense">
+          <h2 class="expense_head"></h2>
+          <p>Total expenses</p>
+        </div>
+        <div class="transactions">
+          <h2 class="total_transactions"></h2>
+          <p>Total Transactions</p>
+        </div>
+        <div class="average">
+          <h2 class="avg_expense"></h2>
+          <p>Average expense</p>
+        </div>
+      </div>
+      <section class="cont2">
+        <div class="new_expense_cont">
+          <h1>Add New Expense</h1>
+          <div class="amount_main">
+            <div class="amount">
+              <h4>AMOUNT</h4>
+              <input type="number" class="spend_input" required />
+            </div>
+            <div class="category">
+              <h4>CATEGORY</h4>
+              <select name="category" id="category" required>
+                <option value="" disabled selected hidden>
+                  Select Category
+                </option>
+                <option value="food">🍔 Food & Dining</option>
+                <option value="transport">🚗 Transport</option>
+                <option value="shopping">🛒 Shopping</option>
+                <option value="health">🏥 Health & Medical</option>
+                <option value="travel">✈ Travelling</option>
+                <option value="education">🏫 Education</option>
+                <option value="entertainment">🎥 Entertainment</option>
+                <option value="bills">💡 Bills & Utilities</option>
+                <option value="others">Others</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="description">
+            <h4>DESCRIPTION</h4>
+            <input
+              type="text"
+              placeholder="What did you spend on?"
+              class="description_box"
+            />
+          </div>
+          <div class="date">
+            <h4>DATE</h4>
+            <input type="date" class="spend_date" required />
+          </div>
+          <button class="add_btn">ADD EXPENSE</button>
+        </div>
+        <div class="recent_expenses">
+          <h1>Recent Expenses</h1>
+          <div class="sect1">
+            <select name="cateory" id="category2">
+              <option value="" disabled selected hidden>Select Category</option>
+              <option value="food">🍔 Food & Dining</option>
+              <option value="transport">🚗 Transport</option>
+              <option value="shopping">🛒 Shopping</option>
+              <option value="health">🏥 Health & Medical</option>
+              <option value="travel">✈ Travelling</option>
+              <option value="education">🏫 Education</option>
+              <option value="entertainment">🎥 Entertainment</option>
+              <option value="bills">💡 Bills & Utilities</option>
+              <option value="others">Others</option>
+            </select>
+            <input type="date" class="filter_date" />
+          </div>
+
+          <button class="add_filter">ADD FILTER</button>
+          <button class="clear">CLEAR FILTERS</button>
+        </div>
+      </section>
+    </div>
+    <!-- Popup Modal -->
+    <div class="edit_modal">
+      <div class="modal_content">
+        <h2>Edit Expense</h2>
+        <label>Amount</label>
+        <input type="number" class="edit_amount" />
+
+        <label>Category</label>
+        <select class="edit_category">
+          <option value="food">🍔 Food & Dining</option>
+          <option value="transport">🚗 Transport</option>
+          <option value="shopping">🛒 Shopping</option>
+          <option value="health">🏥 Health & Medical</option>
+          <option value="travel">✈ Travelling</option>
+          <option value="education">🏫 Education</option>
+          <option value="entertainment">🎥 Entertainment</option>
+          <option value="bills">💡 Bills & Utilities</option>
+          <option value="others">Others</option>
+        </select>
+
+        <label>Description</label>
+        <input type="text" class="edit_description" />
+
+        <label>Date</label>
+        <input type="date" class="edit_date" />
+
+        <div class="modal_btns">
+          <button class="save_edit">Save Changes</button>
+          <button class="cancel_edit">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <script src="expense.js"></script>
+  </body>
+</html>

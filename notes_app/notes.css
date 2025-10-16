@@ -1,0 +1,65 @@
+  body {
+        box-sizing: border-box;
+        margin: 0;
+        background: linear-gradient(45deg, pink, lightblue);
+      }
+      .notes_title {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+      }
+      .notes_title img {
+        width: 50px;
+      }
+      .create_box {
+        display: flex;
+        align-items: center;
+
+        margin: 10px 30px;
+      }
+      .edit_btn {
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 140px;
+        border-radius: 20px;
+        padding: 10px;
+
+        color: #fff;
+        background-color: lightskyblue;
+        font-size: 0.9rem;
+      }
+      .edit_btn img {
+        width: 20px;
+      }
+      .notes_cont {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+      .note_box {
+        position: relative;
+      }
+      .text_box {
+        width: 350px;
+        height: 250px;
+        padding: 10px;
+        outline: 0;
+        border: none;
+        border-radius: 10px;
+        resize: none;
+        font-size: 16px;
+        font-family: "Segoe UI", sans-serif;
+        line-height: 1.5;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .delete {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        width: 30px;
+        cursor: pointer;
+      }
