@@ -101,7 +101,7 @@
         updateStats();
       }
 
-      // ---------- Update Totals ----------
+    
       function updateStats() {
         const average = counter > 0 ? Math.round(sum / counter) : 0;
         expense_head.textContent = `KSH.${sum}`;
@@ -109,7 +109,7 @@
         total_transactions.textContent = counter;
       }
 
-      // ---------- Add New Expense ----------
+      
       add_btn.addEventListener("click", () => {
         if (
           spend_input.value !== "" &&
@@ -183,13 +183,13 @@
           const categoryType = stall2.children[0].textContent.trim();
           const addDate = stall1.children[1].textContent.trim();
 
-          // Normalize the date
+          
           const normalizedAddDate = normalizeDate(addDate);
           const normalizedFiltDate = filtdate ? normalizeDate(filtdate) : null;
 
           let show = true;
 
-          // Apply filters independently
+          
           if (normalizedFiltDate && normalizedAddDate !== normalizedFiltDate) {
             show = false;
           }

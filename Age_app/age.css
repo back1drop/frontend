@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 7rem;
+    background: linear-gradient(135deg, #4d06be, #78a8f5);
+}
+h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+}
+h1 span {
+    color: rgb(255, 255, 59);
+}
+.dateCont input {
+    padding: 6px 10px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    width: 280px;
+    font-size: 1.1rem;
+}
+.dateCont button {
+    background: rgb(255, 255, 59);
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+.dateCont {
+    display: flex;
+    padding: 20px;
+    gap: 15px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    align-items: center;
+    margin-bottom: 2rem;
+    animation: glow ease-in-out 5s infinite;
+}
+@keyframes glow {
+    0% {
+    box-shadow: -1px -1px 20px #a1e8fa, inset 1px 1px 20px #fdff6a;
+    }
+    100% {
+    box-shadow: -1px -1px 10px #beeefa, inset 1px 1px 10px #f6f895;
+    }
+}
+
+p {
+    font-size: 1.5rem;
+}
+p span {
+    color: #d5d827;
+}
